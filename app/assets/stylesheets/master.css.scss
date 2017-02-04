@@ -4,8 +4,16 @@
 //color set Blue: #4BA6FF, Turquois: #50E8DF, Light Green: #86FFB1
 //color set Light Purple: #D593FF, Dark Purple: #5F59E8
 
-.navbar-header {
-  color: #4BA6FF;
+.navbar {
+  border-radius: 0;
   font-family: 'Fira Sans Condensed', sans-serif;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+  box-shadow: 0px 1px 3px #2a2a2a;
+  background:url('footer_lodyas.png');
+}
+
+.navbar-inverse a.navbar-brand {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  letter-spacing: 1px;
+  color: white;
 }
