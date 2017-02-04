@@ -1,6 +1,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed');
+//color set Blue: #4BA6FF, Turquois: #50E8DF, Light Green: #86FFB1
+//color set Light Purple: #D593FF, Dark Purple: #5F59E8
 
-.navbar-inverse {
-  color: #4EC8FF;
+.navbar-header {
+  color: #4BA6FF;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  letter-spacing: 0.5px;
 }
