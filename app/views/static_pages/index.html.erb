@@ -1,82 +1,89 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
 <head>
   <title>lifeflix</title>
 </head>
 <body>
-<!-- Navigation bar beginning -->
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Lifeflix</a>
-    </div>
+  <div id="wrap">
+    <!-- Navigation bar beginning -->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Lifeflix</a>
+        </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Link</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <% if user_signed_in? %>
-          <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
-          <li><%= link_to 'Change Password', edit_user_password_path %></li>
-        <% else %>
-          <li><%= link_to 'Sign in', new_user_session_path %></li>
-          <li><%= link_to 'Sign up', new_user_registration_path %></li>
-        <% end %>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-<!-- Navigation bar end -->
-<!-- Hero Start -->
-<div class="hero">
-  <br />
-  <div class="frosty col-xs-10 col-xs-offset-1 text-center">
-    <br />
-    <h1>Learn to grow your own food from the pros</h1>
-    <br />
-    <h2>Keeping the earth green and bellies full</h2>
-    <br />
-    <%= link_to 'Learn More', '#', class: 'btn btn-success' %>
-    <br /><br />
-  </div>
-</div>
-<!-- Hero End -->
-<!-- Features Start -->
-<br />
-<div class="col-xs-10 col-xs-offset-1 features text-center">
-  <div class="col-sm-4">
-    <h3>Feature 1</h3>
-  </div>
-  <div class="col-sm-4">
-    <h3>Feature 2</h3>
-  </div>
-  <div class="col-sm-4">
-    <h3>Feature 3<h3>
-  </div>
-</div>
-<!-- Features End -->
-<!-- Sticky Footer begin -->
-<footer class="footer">
-      <div class="container">
-        <h2 class="text-muted text-center">Created by the James Lindsey.</h2>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Link</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <% if user_signed_in? %>
+              <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
+              <li><%= link_to 'Change Password', edit_user_password_path %></li>
+            <% else %>
+              <li><%= link_to 'Sign in', new_user_session_path %></li>
+              <li><%= link_to 'Sign up', new_user_registration_path %></li>
+            <% end %>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- Navigation bar end -->
+    <!-- Hero Start -->
+    <div class="hero">
+      <br />
+      <div class="frosty col-xs-10 col-xs-offset-1 text-center">
+        <br />
+        <h1>Learn to grow your own food from the pros</h1>
+        <br />
+        <h2>Keeping the earth green and bellies full</h2>
+        <br />
+        <%= link_to 'Learn More', '#', class: 'btn btn-success' %>
+        <br /><br />
       </div>
-    </footer>
-<!-- Sticky Footer end -->
+    </div>
+    <!-- Hero End -->
+    <!-- Features Start -->
+    <br />
+    <div class="col-xs-10 col-xs-offset-1 features text-center">
+      <div class="col-sm-4">
+        <h3>Feature 1</h3>
+      </div>
+      <div class="col-sm-4">
+        <h3>Feature 2</h3>
+      </div>
+      <div class="col-sm-4">
+        <h3>Feature 3<h3>
+      </div>
+    </div>
+    <!-- Features End -->
+
+    <% if notice.present? %>
+    <p class="alert alert-info"><%= notice %></p>
+    <% end %>
+    <% if alert.present? %>
+    <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
+
+    <%= yield %>
+
+  </div>
+  <br class="clr" />
+  <!-- Sticky footer begin -->
+  <div id="footer">
+    <div class="container text-center">
+      <b>Created by James Lindsey</b>
+      <%= link_to 'Link', '#' %>
+    </div>
+  </div>
+  <!-- Sticky footer end -->
 </body>
-
-<% if notice.present? %>
-<p class="alert alert-info"><%= notice %></p>
-<% end %>
-<% if alert.present? %>
-<p class="alert alert-danger"><%= alert %></p>
-<% end %>
-
-<%= yield %>
+</html>
