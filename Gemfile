@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#ignoring git for some files
+gem "figaro"
 #CarrierWave gem for video uploading
 gem 'carrierwave', '~> 1.0'
 #bootstrap 3 integration
