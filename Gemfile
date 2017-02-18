@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
+#fog lets carrierwave communicate with amazon web server
+gem 'fog'
 #ignoring git for some files
-gem "figaro"
+gem 'figaro'
 #CarrierWave gem for video uploading
 gem 'carrierwave', '~> 1.0'
 #bootstrap 3 integration
