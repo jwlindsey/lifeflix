@@ -1,9 +1,14 @@
 source 'https://rubygems.org'
 
+#CarrierWave gem for video uploading
+gem 'carrierwave', '~> 1.0'
+#bootstrap 3 integration
 gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'sprockets', '2.11.0'
 gem 'sass-rails'
+#simple form for user input
 gem 'simple_form'
+#devise for website security and authentication
 gem 'devise'
 #rails 12 factor gem
 gem 'rails_12factor', group: :production
