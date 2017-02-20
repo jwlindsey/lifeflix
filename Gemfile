@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#allow the editing of photos
+gem 'mini_magick', '~> 4.3.1'
 #fog lets carrierwave communicate with amazon web server
 gem 'fog'
 #ignoring git for some files
