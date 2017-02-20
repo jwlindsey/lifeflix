@@ -6,6 +6,8 @@ gem 'mini_magick', '~> 4.3.1'
 gem 'fog'
 #ignoring git for some files
 gem 'figaro'
+#CarrierWave AWS integration
+gem 'carrierwave-aws'
 #CarrierWave gem for video uploading
 gem 'carrierwave', '~> 1.0'
 #bootstrap 3 integration
