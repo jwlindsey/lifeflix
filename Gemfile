@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#Integrate Strip for PCI compliant credit card transactions
+gem 'stripe'
 #allow the editing of photos
 gem 'mini_magick', '~> 4.3.1'
 #fog lets carrierwave communicate with amazon web server
