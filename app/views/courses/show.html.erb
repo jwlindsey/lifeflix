@@ -35,7 +35,9 @@
           <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                   data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
                   data-description="<%= @course.title %> (<%= number_to_currency @course.cost %>)"
-                  data-amount="<%= (@course.cost * 100).to_i %>"></script>
+                  data-amount="<%= (@course.cost * 100).to_i %>">
+                  data-email="<%= current_user.email %>"
+          </script>
         <% end %>
 
       <% end %>
