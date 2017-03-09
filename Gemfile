@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#allow sorting of classes
+gem 'ranked-model'
 #Integrate Strip for PCI compliant credit card transactions
 gem 'stripe'
 #allow the editing of photos
