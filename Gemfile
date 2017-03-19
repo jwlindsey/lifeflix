@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#add Jquery UI support
+gem 'jquery-ui-rails'
 #allow sorting of classes
 gem 'ranked-model'
 #Integrate Strip for PCI compliant credit card transactions
