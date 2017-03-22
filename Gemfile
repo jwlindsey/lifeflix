@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#adjust section ranks
+gem 'ranked-model'
 #add Jquery UI support
 gem 'jquery-ui-rails'
 #allow sorting of classes
