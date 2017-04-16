@@ -10,7 +10,9 @@ class Instructor::SectionsController < ApplicationController
   end
 
   def update
+    #binding.pry
     current_section.update_attributes(section_params)
+    #binding.pry
     render text: 'updated!'
   end
 
