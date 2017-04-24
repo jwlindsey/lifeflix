@@ -21,6 +21,7 @@ html, body {
   color: white;
   background:url('footer_lodyas.png');
   font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight:100;
   letter-spacing: 1px;
   padding:10px 0px;
   margin-top: 30px;
@@ -29,4 +30,31 @@ html, body {
 #footer a {
   color:white;
   font-weight: 100;
+}
+
+.social-button {
+  width: 32px;
+  margin:4px;
+}
+
+.social a:hover {
+  text-decoration:none;
+}
+
+$footer-height-mobile: 200px;
+@media (max-width: 750px) {
+  #footer {
+    height:$footer-height-mobile;
+  }
+
+  #wrap {
+    margin: 0 auto -$footer-height-mobile;
+    /* Pad bottom by footer height */
+    padding: 0 0 $footer-height-mobile;
+  }
+
+  #footer .social {
+    margin-top:10px;
+  }
+
 }

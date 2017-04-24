@@ -62,11 +62,47 @@
 
   <div id="footer">
     <div class="container ">
-      <div class="col-xs-10 col-xs-offset-1 text-center">
+      <div class="col-xs-12 col-sm-3">
         <b>Teachers</b>
         <br />
         <%= link_to 'Teach a Course', new_instructor_course_path %>
         <br />
+        <%= link_to 'My Dashboard', dashboard_path %>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>About</b>
+        <br />
+        <%= link_to 'Team', '#' %>
+        <br />
+        <%= link_to 'Careers', '#' %>
+        <br />
+        <%= link_to 'Privacy Policy', '#' %>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>Contact</b>
+        <br />
+        ken@thefirehoseproject.com
+        <br />
+        One Kendall Square
+        <br />
+        Cambridge MA, 02113
+      </div>
+      <div class="col-xs-12 col-sm-3 social">
+        <b>Social</b>
+        <br />
+        <br />
+        <%= link_to 'https://github.com/jwlindsey' do %>
+          <%= image_tag 'github.png', class: 'social-button' %>
+        <% end %>
+        <%= link_to 'https://www.facebook.com/linguisticpreacher' do %>
+          <%= image_tag 'facebook.png', class: 'social-button' %>
+        <% end %> 
+        <%= link_to 'https://twitter.com/JW_Lindsey?lang=en' do %>
+          <%= image_tag 'twitter.png', class: 'social-button' %>
+        <% end %> 
+        <%= link_to 'https://plus.google.com/u/0/108305174762148937302' do %>
+          <%= image_tag 'googleplus.png', class: 'social-button' %>
+        <% end %>
       </div>
     </div>
   </div>
